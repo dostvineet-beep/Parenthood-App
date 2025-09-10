@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meal & Nutrition Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container py-5">
+    <h2>AI Meal & Nutrition Assistant</h2>
+    <form action="/meals" method="post" class="mt-4">
+        <div class="mb-3">
+            <label for="family_preferences" class="form-label">Family Preferences (e.g., vegetarian, spicy)</label>
+            <input type="text" class="form-control" name="family_preferences" required>
+        </div>
+        <div class="mb-3">
+            <label for="dietary_restrictions" class="form-label">Dietary Restrictions</label>
+            <input type="text" class="form-control" name="dietary_restrictions" required>
+        </div>
+        <div class="mb-3">
+            <label for="budget" class="form-label">Weekly Budget (USD)</label>
+            <input type="number" step="0.01" class="form-control" name="budget" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Get Meal Plan</button>
+    </form>
+</body>
+</html>
